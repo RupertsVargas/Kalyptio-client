@@ -1,0 +1,483 @@
+
+
+html {
+  --header-color : blue;
+  --search-color: white;
+  --primary-color: #282c34;
+  --secondary-color: #fff;
+  --cardAnother-color:white;
+  /* -background-color: var(--cardAnother-color); */
+  /* cardCustome */
+  --letter-color : black;
+  --letter02-color : black;
+  --filter-color: #0d6efd;
+  --colorMyName-colo: #009dd8;
+  /* --search-color */
+  --tableBody-color:#e7e7e7;
+  --stock-color:#43a650;
+  --transparent-color:#e6f7ee;
+  --card-color: white;
+  /* --colorTitle:#00ffe7; */
+  background-color: white;
+  --backOther-color:white;
+  --invert01-back-color:initial;
+  --invert02-color-color: initial;
+  --invert03-filter-color:0;
+  --loaderBack-color: white;
+  --colorTitle-color:#009688;
+  --root_-color: #e7e7e7;
+  --input_-color:white;
+  --span-color:#022737;
+  
+}
+
+/* Variables de color si el tema es dark */
+html[data-theme="dark"] {
+  --header-color : #282c34;
+  --root_-color: #707070;
+  --primary-color: #fff;
+  --search-color: #6a6a6a;
+  --secondary-color: #282c34;
+  --letter-color : white;
+  --letter02-color : rgb(228, 240, 255);
+  --filter-color: #6a6a6a ;
+  --loaderBack-color: #6a6a6a ;
+  --tableBody-color:#282c34;
+  --card-color:#57585a ;
+  --colorMyName-colo: #ffe31f;
+  --cardAnother-color:#454545;
+  --transparent-color:#ffffff00;
+  --stock-color:#87fa97;
+  --backOther-color:#454545;
+  background-color: #454545;
+  --invert01-back-color:#f1f1f1;
+  --invert02-color-color: black;
+  --invert03-filter-color:1;
+  --colorTitle-color:#00ffe7;
+  --input_-color:#e7e7e7;
+  --span-color:white;
+
+  
+  /* background: #f1f1f1;
+    color: black !important;
+    filter: invert(1); */
+  /* color: white  !important; */
+
+}
+
+.App {
+  text-align: center;
+}
+@import "rsuite/dist/rsuite.css";
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+/* From me */
+.divIconContent{
+  width: 50%;
+  padding: 1%;
+  display: flex;
+  /* height: 50px; */
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+#idConvertion{
+  display: flex;
+    width: 50%;
+}
+.iconContent{
+  background-color: #022737;
+  height: 34px;
+  width: 34px;
+  color: white;
+  display: flex;
+  /* height: 60px; */
+  border-radius: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icons{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.textContentIcon{
+  font-size: 10px;
+  font-weight: 600;
+}
+.contentCardsAll {
+  display: flex;
+    width: 48%;
+    height: 248px;
+    margin: 1%;
+    border-radius: 20px;
+    border:0px;
+    
+    border:0px;
+    -webkit-box-shadow: 0px 4px 8px 1px rgba(166, 166, 166, 0.614);
+    -moz-box-shadow: 0px 4px 8px 1px rgba(166,166,166,1);
+    box-shadow: 0px 4px 8px 1px rgba(166,166,166,1);
+}
+
+.cardCustome{
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  background-color: var(--cardAnother-color);
+  color:var(--letter-color);
+    /* cardCustome */
+    
+    border-radius: 20px;
+    border:0px;
+  flex-direction: row;
+}
+
+.classContentFormSelect{
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.classBeforeDatePicker{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#idForm{
+  width: 100%;
+  margin: auto;
+}
+.contentAllImg{
+  width: 40%;
+}
+.contentImg{
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-start;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    z-index: 0;
+    background-position: center;
+}
+
+.cardBodyCustome{
+  flex: 1 1 auto;
+  width: 60%;
+    display: flex;
+    padding: 1rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconsCirclesContent{
+  color: #ffffffc9;
+  height: 30px;
+  position: absolute;
+}
+
+.imgtrue{
+  position: absolute;
+    top: 0;
+
+}
+
+.cardTitleCustome{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.signerPeque{
+  font-size: 70%;
+  
+}
+.priceClass{
+  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.App{
+  margin: auto;
+  width: 80%;
+}
+.spanprice{
+  color: var(--span-color);
+    display: flex;
+    width: 41%;
+    font-weight: bolder;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.classRangeCustome02{
+  display: flex;
+  /* display: flex; */
+  /* width: 100%; */
+  width: 100%;
+}
+
+@media only screen and (max-width: 1480px) {
+  .App{
+    margin: auto;
+    width: 90%;
+  }
+  /* .textContentIcon{
+    font-size: 9px;
+  } */
+  
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .App{
+    margin: auto;
+    width: 100%;
+  }
+  .contentCardsAll {
+    /* background-color: lightblue; */
+    width: 100%;
+  }
+  .textContentIcon{
+    font-size: 12px;
+  }
+  .contentFiltersmiddle{
+    display: flex;
+    flex-direction: column;
+  }
+  .col-md-6{
+    width: 100%;
+  }
+  .customeInnerDate {
+    width: 100%;
+  }
+  
+}
+
+.customCheckLabel{
+  margin-right: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .customCheckLabel .form-check-label{
+    display: none;
+  }
+  .contentCardsAll {
+    /* background-color: lightblue; */
+    /* width: 100%; */
+
+  }
+  
+  .contentImg {
+    /* width: 100%; */
+    border-radius: 17px;
+  }
+  .textContentIcon{
+    display: none;
+  }
+  .Zoom_{
+    display: inline-flex;
+  }
+  .divIconContent {
+    width: 25%;
+  }
+  .contentAllImg {
+    width: 40%;
+    padding: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+}
+
+
+
+/* MODAL */
+
+.contentAvailable{
+
+}
+
+.Zoom_{
+font-size: 100%;
+font-weight: 100;
+}
+.quiteFontWeight{
+  font-weight: 100;
+}
+
+.contentBodyModal{
+  font-size: 140%;
+  font-weight: 600;
+}
+
+.contentBodyModal div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.quiteFontWeight{
+
+}
+
+.estrellitacontent{
+  display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.customeONESELECT{
+  /* width: 50%; */
+}
+
+.contentFiltersmiddle{
+  display:flex;
+}
+
+.classBtnCustome{
+  
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+.classBeforeDatePicker div{
+  /* margin: 1%; */
+  /* background-color: var(--input_); */
+}
+
+.contentAlerts{
+  font-weight: 600;
+  display: flex;
+  text-align: center;
+  padding: 3%;
+  align-items: center;
+  font-size: 148%;
+  justify-content: center;
+}
+
+.contentAbsoulte{
+  position: fixed !important;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  /* bottom: 0; */
+}
+
+.ppicture{
+  background-image: url(/me/me.png);
+  width: 46px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 46px;
+  border-radius: 32px;
+}
+
+.InsertClassesHe{
+  height: 43px;
+  font-weight: 600;
+  display: flex;
+  padding: 3%;
+  border-radius: 4px;
+  background-color: #aad9ff77;
+  color:white;
+  align-items: center;
+}
+
+html,body{
+  background-color: var(--tableBody-color);
+}
+nav{
+  background-color: var(--header-color);
+  color: white;
+  font-size: 120%;
+  font-weight: 600;
+}
+.navbar-text a{
+  color:white !important;
+}
+
+.App{
+  /* background-color: var(--); */
+}
+
+#root{
+  background-color: var(--root_-color);
+}
+
+.form-label{
+  color: var(--letter-color);
+}
+
+.form-check-label{
+  color:var(--letter-color)
+}
