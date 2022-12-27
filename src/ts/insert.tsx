@@ -40,12 +40,12 @@ function request<TResponse>(
       // data-transformations in the last `then` clause.
   }
 
-const arrayId = ["street",
-"price",
-"score",
-"type",
-"description",
-"image"];
+  const arrayId = ["street",
+  "price",
+  "score",
+  "type",
+  "description",
+  "image"];
 
 async function setUsers(data_:any) {
     try {
