@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Kalyptio-client/static/css/main.7c522358.css",
+    "main.js": "/Kalyptio-client/static/js/main.49c0f97e.js",
+    "static/js/787.5f5cfa7a.chunk.js": "/Kalyptio-client/static/js/787.5f5cfa7a.chunk.js",
+    "static/media/me.png": "/Kalyptio-client/static/media/me.547ad353a2ac1cff2a67.png",
+    "index.html": "/Kalyptio-client/index.html",
+    "main.7c522358.css.map": "/Kalyptio-client/static/css/main.7c522358.css.map",
+    "main.49c0f97e.js.map": "/Kalyptio-client/static/js/main.49c0f97e.js.map",
+    "787.5f5cfa7a.chunk.js.map": "/Kalyptio-client/static/js/787.5f5cfa7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c522358.css",
+    "static/js/main.49c0f97e.js"
+  ]
+}
