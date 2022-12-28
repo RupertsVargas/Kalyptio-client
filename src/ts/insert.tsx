@@ -2,7 +2,7 @@ import React ,{ useState, Dispatch } from 'react';
 import {FC} from "react";
 import { Rating } from 'react-simple-star-rating';
 import axios from 'axios';
-
+import { urlGlobal } from './url';
 const arrayPrice:{[key:string]:number} = {A:100,B:175,C:200,"":0};
 // const arrayAmenities:{[key:number]:string} = ["Cámaras de vigilancia","Cajón techado","Departamento","Planta baja","Estacionamiento cerrado","Lugar en batería"];
 export const arrayAmenities = ["Cámaras de vigilancia","Cajón techado","Departamento","Planta baja","Estacionamiento cerrado","Lugar en batería"];
@@ -56,7 +56,7 @@ async function setUsers(data_:any) {
     // "Access-Control-Allow-Origin": "*",
         return await axios({
             method: 'post',
-            url: 'http://localhost:7000/insertParkings',
+            url: urlGlobal+'insertParkings',
             data: data_,
             withCredentials: false,
             headers: {

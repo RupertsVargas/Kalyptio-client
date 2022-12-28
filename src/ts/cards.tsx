@@ -1,5 +1,5 @@
 import React ,{ useState, Dispatch } from 'react';
-
+import { urlGlobal } from './url';
 import {FC} from "react";
 import axios from 'axios';
 import { DateRangePicker } from 'rsuite';
@@ -86,7 +86,7 @@ const Card : FC =  () => {
         
             let test = await axios({
                 method: 'get',
-                url: 'http://localhost:7000/getParkingsDate?id='+id+"&dateInit="+dateInit+"&dateEnd="+dateFinal+"&price="+price,
+                url: urlGlobal+'getParkingsDate?id='+id+"&dateInit="+dateInit+"&dateEnd="+dateFinal+"&price="+price,
                 headers: {
                     //         "Content-Type": "multipart/form-data",
                             "Content-Type": "application/json" 
@@ -165,7 +165,7 @@ const Card : FC =  () => {
         let request =  await axios({
             method: 'post',
             data: JSON.stringify(post),
-            url: 'http://localhost:7000/getParkings2',
+            url: urlGlobal+'getParkings2',
             headers: {
         
                         "Content-Type": "application/json" 
@@ -216,7 +216,7 @@ const Card : FC =  () => {
         // <Alert className='contentAlerts' key={"info"} variant={"info"}>L o a d i n g</Alert>);
         axios({
             method: 'get',
-            url: 'http://localhost:7000/getParkings',
+            url: urlGlobal+'getParkings',
             headers: {
         
                         "Content-Type": "application/json" 
