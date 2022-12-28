@@ -49,3 +49,38 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 #� �K�a�l�y�p�t�i�o�-�c�l�i�e�n�t�
 �
 �
+
+
+
+# Kalyptio Fullstack Code Challenge
+
+A garage parking which manages plenty of car spaces needs to develop an app in order to create, delete, list and filter their available parking spaces. Your mission is to build a webapp in order to solve the company's needs for the following use case:
+
+A person is searching for a parking space between the 1st of October and the 30th of April. He/she is prompted with three different options; parking space A in Street A #35, California, CA, parking space B in Street B #27, California, CA, and parking space C in Street C #7, California, CA.
+Parking space A will cost 100USD per month, Parking space B will cost 175USD per month, and Parking space C will cost 200USD per month.
+
+The platform will show him/her the spaces available with the following requirements:
+
+
+## Client requirements description
+
+1. Client solution should be written in Angular +12, Vue +3 or React +17.
+2. Web app must consume server app endpoints (Create, list, filter, parking detail page and delete parkings).
+3. Web app must be responsive!
+4. You can use any UI library like Bootstrap or Material.
+
+We’d expect the following design when listing parkings in desktop (Individual Parking Card): 
+![Kalyptio Logo](./parkcardweb.png "Parking card")
+
+
+We’d expect the following design when listing parkings in mobile (Individual Parking Card): 
+![Kalyptio Logo](./parkcardmobile.png "Parking card")
+
+Parking Card must show the following info:
+
+1. Address.
+2. Amenities.
+3. Score.
+4. Price.
+5. Image Carrousel (You can use any images. Up to 5 per card).
+---
